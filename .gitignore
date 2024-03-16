@@ -128,4 +128,5 @@ kernel/configs/android-*.cfg
 # build
 out/
 *.zip
+log.txt
 error.log
