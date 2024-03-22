@@ -374,7 +374,7 @@ extern int ksu_handle_faccessat(int *dfd, const char __user **filename_user, int
  * switching the fsuid/fsgid around to the real ones.
  */
 SYSCALL_DEFINE3(faccessat, int, dfd, const char __user *, filename, int, mode)
-{	
+{
 	const struct cred *old_cred;
 	struct cred *override_cred;
 	struct path path;
